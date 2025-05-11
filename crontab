@@ -1,0 +1,7 @@
+#
+# this crontab example run every reboot and every midnight to get the latest .ipset or .netset
+# from blocklist-url.txt file.
+# preferably from https://github.com/firehol/blocklist-ipsets
+#
+@reboot ipset-update.sh
+@daily ipset-update.sh
